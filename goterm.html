@@ -1,0 +1,77 @@
+<html>
+	<head>
+		<title>GO Terms - Similarity Measurement</title>
+		<link rel="stylesheet" href="styles/style.css">
+		<script language="JavaScript">
+		function popUp(URL) {
+		day = new Date();
+		id = day.getTime();
+		eval("page" + id + " = window.open(URL, '" + id + "', 'toolbar=0,scrollbars=1,location=0,statusbar=0,menubar=0,resizable=0,width=400,height=600');");
+		}
+		</script>
+	</head>
+		<body>
+			<div class="mainContainer">
+				<div class="headerContainer">
+					<div class="header">
+						Gene similarity measurement
+					</div>
+				</div>
+				
+				<div class="menuContainer">
+					<div class="menuItem">
+						<button type="button" class="btn"
+							onclick="window.location.href='index.html'">HOME
+						</button>
+						<button type="button" class="btn"
+							onclick="window.location.href='geneproduct.html'">GENE PRODUCTS
+						</button>
+						<button type="button" class="btn"
+							onclick="window.location.href='goterm.html'">GO TERMS
+						</button>
+						<div class="menuItem2">
+							<script language = "JavaScript" align="right">
+								var now = new Date();
+								var dayNames = new Array("Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday");
+								var monNames = new Array("January","February","March","April","May","June","July","August","September","October","November","December");
+								document.write(dayNames[now.getDay()]  + " " + now.getDate() + " " + monNames[now.getMonth()]+ ", " + now.getFullYear());
+							</script>
+						</div>
+					</div>
+				</div>
+				
+				<div class="topFrame" align="center"><br><br>
+					<div class="pageHeader">
+						GO Terms - Similarity Measurement
+					</div>
+				</div>
+				
+				<div class="middleContainer">
+					<p align="center">Please enter two GO Terms below. (Eg. GO:0016787 and GO:0050129)<p><br>
+					<form name="goterm" method="post" action="go_results.php">
+						<p align="center">
+							<b>GO Term 1:</b>  
+							<input type="text" name="goterm1">&nbsp;&nbsp;&nbsp;&nbsp;<a href="javascript:popUp('list/golist.php')">Browse</a>
+							<br><br>
+							<b>GO Term 2:</b>
+							<input type="text" name="goterm2">&nbsp;&nbsp;&nbsp;&nbsp;<a href="javascript:popUp('list/golist.php')">Browse</a>
+							<br><br><br><br>
+						
+							<input type="submit" value="Submit">
+							<input type="reset" value="Reset">
+						</p>
+					</form>
+				</div>
+				
+				<br><br><br><br>
+				
+				<div class="bottomFrame">
+				</div>
+				
+				<div class="footer">
+					Copyright © 2009 Jenny Gow
+				</div>
+				
+			</div>
+		</body>
+</html>	

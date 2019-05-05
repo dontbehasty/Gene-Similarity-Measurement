@@ -1,0 +1,164 @@
+html,body{
+	border:0px;
+	margin:0px;
+	width:100%;
+	height:100%;
+	background-image:url('../images/bg.jpg');
+	font-size:14px;
+}
+
+.mainContainer{
+	width:800px;
+	min-height: auto;
+	height:auto;
+	margin:auto;
+	background-color:#ffffff;
+	overflow:display;
+	border-style: solid;
+	border-width: 8px;
+	border-color: #ffffff;
+	}
+
+.headerContainer{
+	width:100%;
+	height:100px;
+	background-image:url('../images/header.jpg');
+	background-repeat:no-repeat;
+	background-position:right;
+}
+
+.header{
+	width:100%;
+	margin-left: 10%;
+	font-family:sans-serif;
+	font-size:40px;
+	color:#ffffff;
+	padding:20px;
+	letter-spacing:-4px;
+	font-weight:bold;
+	text-align:left;
+}
+
+.header:first-letter{
+	color:#33CDFF;
+}
+
+.menuContainer{
+	width:100%;
+	height:35px;
+	line-height:35px;
+	background-color:#EFEFEF;
+}
+
+.menuItem{
+	margin-left:0px;
+	color:black;
+	font-weight:normal;
+	font-family:"Arial";
+	text-align:left;
+	font-size:13px;
+}
+
+.menuItem2{
+	margin-left:0px;
+	color:black;
+	font-weight:normal;
+	font-family:"Arial";
+	text-align:right;
+	font-size:13px;
+	float:right;
+	padding-right: 5px;
+}
+
+.topFrame{
+	width:100%;
+	height:160px;
+	background-image:url('../images/topframe.gif');
+	background-repeat:no-repeat;
+}
+
+.pageHeader{
+	width:93%;
+	height:40px;
+	background-color:#0081C7;
+	color:white;
+	font-weight:bold;
+	font-family:"Arial";
+	text-align:center;
+	font-size:20px;
+	padding-top:1.5%;
+}
+
+.bottomFrame{
+	width:100%;
+	height:160px;
+	background-image:url('../images/bottomframe.gif');
+	background-repeat:no-repeat;
+}
+
+.footer{
+	width:100%;
+	height:40px;
+	line-height:40px;
+	background-color:#EFEFEF;
+	color:black;
+	font-weight:normal;
+	font-family:"Arial";
+	text-align:left;
+	font-size:10px;
+	text-align:center;
+}
+
+a{
+	text-decoration:normal; 
+	color:#000000;
+}
+
+a:visited{
+	text-decoration:normal;
+	color:#000000;
+}
+
+a:hover{
+	text-decoration:underline;
+	color:#000000;
+}
+
+a:active{
+	text-decoration:normal;
+	color:blue;
+}
+
+.middleContainer{
+	margin-top:-40px;
+	margin-bottom:-100px;
+	margin-left:80px;
+	margin-right:80px;
+	color:#383838;
+	font-weight:normal;
+	font-family:"Arial";
+	text-align:left;
+	font-size:12px;	
+}
+
+td{
+	font-family: Arial; 
+	font-size: 12px;
+	vertical-align: top;
+}
+
+p1{
+	color:red;
+}
+
+p2{
+	color:blue;
+}
+
+p3{
+	color:white;
+	font-size: 20px;
+}
+
+.btn {border:1px;color: black; height:95%; cursor:pointer; background-color: #EFEFEF; text-align:left; border-color: #c9c9c9; font-size:14px; }
+.btn:hover {background: #c9c9c9;}

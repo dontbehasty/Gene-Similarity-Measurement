@@ -1,0 +1,73 @@
+<html>
+	<head>
+		<title>Gene Similarity Measurement - Homepage</title>
+		<link rel="stylesheet" href="styles/style.css">
+	</head>
+		<body>
+			<div class="mainContainer">
+				<div class="headerContainer">
+					<div class="header">
+						Gene similarity measurement
+					</div>
+				</div>
+				
+				<div class="menuContainer">
+					<div class="menuItem">
+						<button type="button" class="btn"
+							onclick="window.location.href='index.html'">HOME
+						</button>
+						<button type="button" class="btn"
+							onclick="window.location.href='geneproduct.html'">GENE PRODUCTS
+						</button>
+						<button type="button" class="btn"
+							onclick="window.location.href='goterm.html'">GO TERMS
+						</button>
+						<div class="menuItem2">
+							<script language = "JavaScript" align="right">
+								var now = new Date();
+								var dayNames = new Array("Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday");
+								var monNames = new Array("January","February","March","April","May","June","July","August","September","October","November","December");
+								document.write(dayNames[now.getDay()]  + " " + now.getDate() + " " + monNames[now.getMonth()]+ ", " + now.getFullYear());
+							</script>
+						</div>
+					</div>
+				</div>
+				
+				<div class="topFrame" align="center"><br><br>
+					<div class="pageHeader">
+						Home Page
+					</div>
+				</div>
+				
+				<div class="middleContainer">
+					<h2 align="center"><u>Welcome</u></h2><br>
+										
+					<h3>About this website</h3>
+					<p>
+						This system has been designed so that it can measure the similarity between genes. Users no longer have to manually
+						work out gene similarity by doing the calculations themselves, but can now enter the names of gene products or GO terms
+						and this system will do the calculation for them.<br><br>
+						
+						The system uses a database which has been provided by the <a href="http://www.geneontology.org/index.shtml">Gene Ontology Consortium</a>.
+						The database is in MySQL format and holds all the information relating gene products to GO terms. The system itself has been coded in HTML
+						and PHP. PHP is a server-side scripting language, that can be embedded within HTML code and works well with MySQL.<br><br>
+						
+						The system is also based on a <a href="http://ieeexplore.ieee.org/xpls/abs_all.jsp?arnumber=4562064">similarity method</a> that was created by Anurag Nagar and Hisham Al-Mubaid. This method measures similarity by 
+						calculating the path length (distance) between the two gene products or GO terms.
+					</p>
+					<br>
+					<p align="center">
+						<img src="images/dna.jpg" alt="DNA - http://www.yourreconnection.com/images/dna.jpg">
+					<p>
+				</div>
+				
+				<div class="bottomFrame">
+				</div>
+				
+				<div class="footer">
+						Copyright © 2009 Jenny Gow
+				</div>
+				
+			</div>
+		</body>
+</html>	

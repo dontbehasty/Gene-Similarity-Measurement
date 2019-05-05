@@ -1,0 +1,121 @@
+<html>
+	<head>
+		<title>Gene Products - Similarity Measurement</title>
+		<link rel="stylesheet" href="styles/style.css">
+		<script language="JavaScript">
+		function popUp(URL) {
+		day = new Date();
+		id = day.getTime();
+		eval("page" + id + " = window.open(URL, '" + id + "', 'toolbar=0,scrollbars=1,location=0,statusbar=0,menubar=0,resizable=0,width=400,height=600');");
+		}
+		</script>
+	</head>
+		<body>
+			<div class="mainContainer">
+				<div class="headerContainer">
+					<div class="header">
+						Gene similarity measurement
+					</div>
+				</div>
+				
+				<div class="menuContainer">
+					<div class="menuItem">
+						<button type="button" class="btn"
+							onclick="window.location.href='index.html'">HOME
+						</button>
+						<button type="button" class="btn"
+							onclick="window.location.href='geneproduct.html'">GENE PRODUCTS
+						</button>
+						<button type="button" class="btn"
+							onclick="window.location.href='goterm.html'">GO TERMS
+						</button>
+						<div class="menuItem2">
+							<script language = "JavaScript" align="right">
+								var now = new Date();
+								var dayNames = new Array("Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday");
+								var monNames = new Array("January","February","March","April","May","June","July","August","September","October","November","December");
+								document.write(dayNames[now.getDay()]  + " " + now.getDate() + " " + monNames[now.getMonth()]+ ", " + now.getFullYear());
+							</script>
+						</div>
+					</div>
+				</div>
+				
+				<div class="topFrame" align="center"><br><br>
+					<div class="pageHeader">
+						Gene Products - Similarity Measurement
+					</div>
+				</div>
+				
+				<div class="middleContainer">
+					<table cellpadding="0" cellspacing="0" border="0" width="100%">
+						<form name="geneproduct" method="post" action="gp_results.php">
+							<tr>
+								<td width="60%">
+									<p>
+										<b>1. Please enter two gene names:</b><br><br>
+										Gene 1:  
+										<input type="text" name="gene1">&nbsp;&nbsp;&nbsp;&nbsp;<a href="javascript:popUp('list/lista.php')">Browse</a>
+										<br><br>
+										Gene 2: 
+										<input type="text" name="gene2">&nbsp;&nbsp;&nbsp;&nbsp;<a href="javascript:popUp('list/lista.php')">Browse</a>
+									</p><br><br>
+									
+									<p>
+										<b>2. Please select which ontology <br>
+										you would like to use:</b><br>										
+										<br><input type="radio" name="ontology" value="all" checked> All
+										<br><input type="radio" name="ontology" value="molecular_function"> Molecular Function
+										<br><input type="radio" name="ontology" value="biological_process"> Biological Process
+										<br><input type="radio" name="ontology" value="cellular_component"> Cellular Component										
+									</p>
+								</td>
+								<td width="40%">
+								<b>3. Please select a Datasource:</b>
+									<div style="width: 200px; height: 265px; background-color: ffffff; color: 000000; font-family: arial; overflow: auto; padding: 4px;">
+										<input type="radio" name="datasource" value="all" checked> All
+										<br><input type="radio" name="datasource" value="FB"> FB
+										<br><input type="radio" name="datasource" value="GeneDB_Lmajor"> GeneDB_Lmajor
+										<br><input type="radio" name="datasource" value="GeneDB_Pfalciparum"> GeneDB_Pfalciparum
+										<br><input type="radio" name="datasource" value="GeneDB_Spombe"> GeneDB_Spombe
+										<br><input type="radio" name="datasource" value="GeneDB_Tbrucei"> GeneDB_Tbrucei
+										<br><input type="radio" name="datasource" value="GR"> GR
+										<br><input type="radio" name="datasource" value="MGI"> MGI
+										<br><input type="radio" name="datasource" value="NCBI"> NCBI
+										<br><input type="radio" name="datasource" value="NCBI_GP"> NCBI_GP
+										<br><input type="radio" name="datasource" value="NCBI_NP"> NCBI_NP
+										<br><input type="radio" name="datasource" value="PAMGO_VMD"> PAMGO_VMD
+										<br><input type="radio" name="datasource" value="PseudoCAP"> PseudoCAP
+										<br><input type="radio" name="datasource" value="PDB"> PDB
+										<br><input type="radio" name="datasource" value="RGD"> RGD
+										<br><input type="radio" name="datasource" value="SGD"> SGD
+										<br><input type="radio" name="datasource" value="SGN"> SGN
+										<br><input type="radio" name="datasource" value="TAIR"> TAIR
+										<br><input type="radio" name="datasource" value="TIGR_CMR"> TIGR_CMR
+										<br><input type="radio" name="datasource" value="TIGR_Tba1"> TIGR_Tba1
+										<br><input type="radio" name="datasource" value="UniProt"> UniProt
+										<br><input type="radio" name="datasource" value="UniProtKB"> UniProtKB
+										<br><input type="radio" name="datasource" value="WB"> WB
+										<br><input type="radio" name="datasource" value="ZFIN"> ZFIN
+									</div>
+								</td>
+							</tr>
+							<tr>
+								<td colspan="2" align="Center"><br><br><br>
+									<input type="submit" value="Submit">
+									<input type="reset" value="Reset">
+								</td>
+							</tr>
+						</form>
+					</table>	
+				</div>
+				
+				<div class="bottomFrame">
+				</div>
+				
+				<div class="footer">
+						Copyright © 2009 Jenny Gow
+				</div>
+				
+			</div>
+		</body>
+</html>	
