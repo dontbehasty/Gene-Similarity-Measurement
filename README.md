@@ -1,5 +1,5 @@
-# Gene-Similarity-Measurement
-Web based system that measures the similarity between genes. 
+# Gene Similarity Measurement
+This is a web based system that measures the similarity between genes. 
 
 The system uses a database which is available from the Gene Ontology consortium website.
 This database contains annotations of genes and gene products to terms in the Gene Ontology.
@@ -9,23 +9,19 @@ This method measures similarity by calculating the path length (distance) betwee
 For this project there is going to be two separate similarity methods.
 The first method will measure the similarity between gene ontology terms and the second method will measure the similarity between gene products.
 
-<br><hr><br>
-
-<b><u>Similarity by Path Length (distance)</u></b><br>
+# Similarity by Path Length (distance)
 After researching the different ways of measuring the similarity betweens genes, it has been decided that path length between GO terms will be used to calculate the similarity for the purposed system. The method was designed by Anurag Nagar and Hisham Al-Mubaid. The smaller the path length (distance) is, then the more similar the two genes are.
 
 <br>
 
-<b><u>Similarity between Gene Products</u></b><br>
+# Similarity between Gene Products
 <img src="/screenshots/writeup1.png"/>
 <img src="/screenshots/writeup2.png"/>
 <img src="/screenshots/writeup3.png"/>
 <img src="/screenshots/writeup4.png"/>
 <img src="/screenshots/writeup5.png"/>
 
-<br><hr><br>
-
-<b><u>Implementation of the Database</u></b><br>
+# Implementation of the Database
 There are several databases available from Gene Ontology website. For this system the association database (assocdb) was used. This database contains both the GO vocabulary and associations between GO terms and gene products. The information contained in this database will help to measure the similarity between genes. 
 <br>
 
@@ -47,9 +43,7 @@ The assocdb database contains many tables but the main tables that will be used 
   <li>Term_synonym (term_id, term_synonym, acc_synonym)
 </ul>
 
-<br><hr><br>
-
-<b><u>Implementation of GO Terms Similarity Method</u></b><br>
+# Implementation of GO Terms Similarity Method
 Path length (distance) is being used to measure the similarity between GO terms, so distance was looked up in the database. Distance was found in the graph_path table along with term1_id and term2_id. Therefore term1_id is set to the value that is read in from goterm1. Term2_id is then set to the value that is read in from goterm2. Once term1_id and term2_id have been set the distance between the two terms can then been found.
 <br><br>
 Now that the distance has been found between the two terms, the actual similarity can be worked out. This is done by using the following equation: Sim (GOx , GOy) = e − f *PL(GOx,GOy).
@@ -80,9 +74,7 @@ $similarity2 = round($similarity1, 2);
   <img src="/screenshots/image3.png" width="600"/>
 </div>
 
-<br><hr><br>
-
-<b><u>Implementation of Gene Products Similarity Method</u></b><br>
+# Implementation of Gene Products Similarity Method
 Path length (distance) was also used to measure the similarity between gene products. However finding the path length between gene products is just not as easy as finding the path length between GO terms. However each gene product has a set of GO terms associated with it and these terms can be used to find the path length. 
 <br><br>
 In order to find the average path length (distance) following equation can be used:
