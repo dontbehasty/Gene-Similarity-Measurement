@@ -28,7 +28,7 @@ After researching the different ways of measuring the similarity betweens genes,
 <b><u>Implementation of the Database</b></u><br>
 There are several databases available from Gene Ontology website. For this system the association database (assocdb) was used. This database contains both the GO vocabulary and associations between GO terms and gene products. The information contained in this database will help to measure the similarity between genes. 
 
-<img src="/screenshots/image8.jpg" width="500"/>
+<img src="/screenshots/image8.jpg" width="600" align="center"/>
 
 The assocdb database contains many tables but the main tables that will be used for this system are:
 <ul>
@@ -158,7 +158,7 @@ $similarity2 = round($similarity1, 2);
 ```
 
 <br>
-<div>
+<div align="center">
   <img src="/screenshots/image5.png" width="600"/> &nbsp
   <img src="/screenshots/image6.png" width="600"/>
 </div>
