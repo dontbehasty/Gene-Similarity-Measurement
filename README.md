@@ -27,9 +27,13 @@ After researching the different ways of measuring the similarity betweens genes,
 
 <b><u>Implementation of the Database</b></u><br>
 There are several databases available from Gene Ontology website. For this system the association database (assocdb) was used. This database contains both the GO vocabulary and associations between GO terms and gene products. The information contained in this database will help to measure the similarity between genes. 
+<br>
 
-<img src="/screenshots/image8.jpg" width="600" align="center"/>
+<div align="center">
+    <img src="/screenshots/image8.jpg" width="600"/>
+</div>
 
+<br>
 The assocdb database contains many tables but the main tables that will be used for this system are:
 <ul>
   <li>Association (id, term_id, gene_product_id, is_not, role_group)
